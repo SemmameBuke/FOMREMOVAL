@@ -6,3 +6,18 @@ body {
   background-color: rgb(34, 35, 34);
 }
 
+/* Spinner-Styles */
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1); /* Leichte Transparenz */
+  border-left-color: #32cd32; /* Grün (#32cd32 - LimeGreen) */
+  border-radius: 50%; /* Runde Form */
+  width: 30px; /* Breite */
+  height: 30px; /* Höhe */
+  animation: spin 1s linear infinite; /* Rotationsanimation */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg); /* 360-Grad-Drehung */
+  }
+}
